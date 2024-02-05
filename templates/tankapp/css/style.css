@@ -1,0 +1,361 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+    display: inline-block;
+}
+body
+{
+    background-color: #fff;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 20px;
+}
+.header
+{
+    background-color: #ffffff;
+}
+.header-inner
+{
+    display: flex;
+    height: 87px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-list
+{
+    display: flex;
+    list-style: none;
+}
+.menu-list li
+{
+    margin-left: 45px;
+}
+.menu-list a
+{
+    color: #2d394c;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.signUp
+{
+    background-color: #67adde;
+}
+.signUp
+{
+    background-image: url("../images/iphone.png");
+    background-repeat: no-repeat;
+    background-position: left 85% bottom 0%;
+}
+.signUp-inner {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.signUp-info {
+    margin: 241px 139px auto 30px;
+    padding-bottom: 255px;
+}
+.signUp__title {
+    line-height: 72px;
+    font-size: 52px;
+    font-weight: 700;
+    width: 575px;
+    text-transform: uppercase;
+    color: #f7f6f2;
+    margin-bottom: 47px;
+}
+.signUp__descpr {
+    line-height: 47px;
+    font-size: 27px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 65px;
+}
+.signUpfree__Img
+{
+    margin-bottom: 32px;
+}
+.signUp__form
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+.signUp__form input
+{
+    border: 1px solid #7eb9e3;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 425px;
+    padding: 22px 150px 20px 28px;
+}
+.signUp__form input::placeholder{
+    color: #bec2c8; 
+}
+.signUp__form input:focus
+{
+    outline-style: none;
+}
+
+.signUp__form button
+{
+    padding: 21px 25px;
+    margin-left: 35px;
+}
+.SignUp-btn
+{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background-color: #77c344;
+    cursor: pointer;
+}
+.signUp-error
+{
+    color: #ffe6e4;
+}
+
+.SignUp-btn:hover
+{
+    background-color: #86dc4c;
+}
+.SignUp-btn
+{
+    transition-property: background;
+    transition-duration: .5s;
+}
+
+.partners {
+    background-color: #f8f8f8;
+}
+.partners-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 63px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+.partners-item {
+    display: flex;
+    align-items: center;
+}
+
+.whyTank
+{
+    background-image: url(../images/macbook.png);
+    background-repeat: no-repeat;
+    background-position: top 100% right 0%;
+    background-color: #fff;
+}
+.content-title
+{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 40px;
+    line-height: 133px;
+    font-weight: 500;
+    color: #2d394c;
+}
+.whyTank-items
+{
+    margin-top: 170px;
+    margin-bottom: 155px;
+}
+.whyTank-item
+{
+    max-width: 505px;
+    margin-bottom: 37px;
+}
+.whyTank-item__title
+{
+    color: #2d394c;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+}
+.whyTank-item__title img
+{
+    margin-right: 26px;
+}
+.whyTank-item__descr
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #9499a2;
+}
+
+.whyDifferent
+{
+    background-image: url(../images/Ships.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-color: #f6f6f7;
+}
+.whyDifferent-inner {
+    padding-top: 165px;
+    padding-bottom: 194px;
+    padding-left: 14px;
+}
+.whyDifferent-title {
+    margin-left: 291px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 165px;
+}
+.whyDifferent-info {
+    max-width: 734px;
+}
+.whyDifferent-info__title {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 28px;
+    margin-bottom: 37px;
+    color: #2d394c;
+}
+.whyDifferent-info__title img
+{
+    margin-right: 27px;
+}
+.whyDifferent-info__descpr {
+    font-size: 16px;
+    line-height: 32px;
+    color: #5a626e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.saveTime {
+}
+.saveTime-inner {
+    padding-top: 146px;
+    padding-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.saveTime-title {
+    font-weight: 500;
+    color: #5a626e;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.saveTime-descpr {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 67px;
+}
+.saveTime-form
+{
+    display: flex;
+    align-items: center;
+}
+
+.saveTime-form__input {
+    
+    width: 640px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    padding: 26px 20px 26px 80px;
+
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+
+    background-image: url("../images/mail.png");
+    background-repeat: no-repeat;
+    background-position: 24px 50%;
+    background-color: #fff;
+    
+}
+.Yandex-map
+{
+    margin-bottom: 50px;
+    
+}
+.Yandex-map-inner
+{
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.saveTime-form__input:focus
+{
+    outline-style: none;
+}
+.saveTime-btn
+{
+    margin-left: 35px;
+    padding: 27px 58px;
+}
+
+
+.footer
+{
+    border-top: 1px solid #e8e8ea;
+    background-color: #f9f9f9
+}
+.footer-inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 58px;
+    padding-bottom: 55px;
+}
+.footer-menu
+{
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+}
+.footer-border
+{
+    padding-right: 17px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.footer-links
+{
+    display: flex;
+    
+}
+.footer-links__start
+{
+    margin-left: 22px;
+}
+.footer-links a
+{
+    margin-right: 37px;
+}
+
+#vk_community_messages
+{
+    right: 50px !important;
+    bottom: 20px !important;
+}

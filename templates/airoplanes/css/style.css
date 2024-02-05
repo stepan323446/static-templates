@@ -1,0 +1,396 @@
+:root
+{
+    --standart-color: #C10C99;
+    --hover-color: #e213b5;
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body
+{
+    position: relative;
+    background: #050214;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+
+body > header
+{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    padding-left: 42px;
+    padding-top: 31px;
+}
+h2
+{
+    font-weight: 500;
+    font-size: 30px;
+}
+a
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #b8159b;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+a:hover
+{
+    color: #d419b2 !important;
+}
+.logo
+{
+    font-weight: 600;
+}
+.content
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* Video as image */
+.video
+{
+    height: 100%;
+    width: 60%;
+
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+}
+.video .thumbnail
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/airplane.png);
+    background-size: cover;
+    background-position: bottom;
+    opacity: 1;
+}
+.thumbnail-filter
+{
+    position: absolute;
+    background-color: #020914;
+    width: 100%;
+    height: 100%;
+    opacity: 0.54;
+}
+#video-play
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: rgba(204, 204, 204, 0.54);
+    width: 86px;
+    height: 86px;
+    border: 0;
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+/* Block with form and other info */
+.info
+{
+    width: 40%;
+    overflow: auto;
+}
+.info::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+.info::-webkit-scrollbar-thumb {
+    background-color: var(--standart-color);
+    outline: 0;
+}
+.info-form
+{
+    width: 100%;
+    max-width: 435px;
+    padding: 0 15px 25px 15px;
+    margin: 0 auto;
+    margin-top: 132px;
+}
+.info-form h2
+{
+    margin-bottom: 22px;
+}
+.advice
+{
+    font-weight: 400;
+    font-size: 16px;
+}
+.advice-item
+{
+    margin-bottom: 12px;
+}
+.advice-link
+{
+    margin-left: 10px;
+}
+
+/* Form for Log in */
+form
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 52px;
+}
+label
+{
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+/* CSS for input */
+input:not([type="checkbox"])
+{
+    position: relative;
+    width: 100%;
+    
+    background-color: transparent;
+    padding: 7px 10px 7px 30px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+input:not([type="checkbox"])::-webkit-input-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"])::-moz-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"]):-ms-input-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"])::-ms-input-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"])::placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"]):focus
+{
+    outline: none;
+    border-bottom: 2px solid;
+    border-color: var(--standart-color);
+}
+.input-inner
+{
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 49px;
+}
+.input-inner::before
+{
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+#input-email::before
+{
+    background-image: url(../images/mail.svg);
+    top: 10px;
+}
+#input-password::before,
+#input-repeat-password::before
+{
+    background-image: url(../images/padlock.svg);
+    top: 5px;
+}
+#input-user::before
+{
+    background-image: url(../images/user.svg);
+    top: 7px;
+}
+.input-hide button
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+#log-in .last
+{
+    margin-bottom: 17px;
+}
+
+/* under inputs */
+.password-properties
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 70px;
+}
+.password-properties *
+{
+    font-weight: 300;
+    font-size: 12px;
+}
+.password-properties a
+{
+    color: #FFFFFF;
+}
+/* checkbox */
+input[type="checkbox"]
+{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    display: -webkit-inline-box;
+
+    display: -ms-inline-flexbox;
+
+    display: inline-flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+input[type="checkbox"]:checked
+{
+    background-color: var(--standart-color);
+}
+input[type="checkbox"]::after
+{
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-image: url(../images/checkmark.svg);
+}
+
+
+.btn
+{
+    padding: 14px 10px;
+    background-color: var(--standart-color);
+    border: 0;
+    border-radius: 50px;
+
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+.btn:hover
+{
+    background-color: var(--hover-color);
+}
+
+/* Others */
+.or
+{
+    margin-top: 39px;
+}
+.or .text
+{
+    text-align: center;
+    color: #B5B5B5;
+    font-weight: 500;
+    font-size: 16px;
+}
+.or .links a
+{
+    display: inline-block;
+    margin-right: 25px;
+}
+.or .links
+{
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.or .links a:last-child
+{
+    margin-right: 0;
+}
+
+/* register change */
+#register .input-inner
+{
+    margin-bottom: 57px;
+}

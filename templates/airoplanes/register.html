@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Airplane</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Your logo</div>
+    </header>
+    <div class="content">
+        <aside class="video">
+            <div class="thumbnail">
+                <div class="thumbnail-filter"></div>
+                <button type="button" id="video-play">
+                    <img src="images/play.svg" alt="">
+                </button>
+            </div>
+        </aside>
+
+        <aside class="info">
+            <div class="info-form">
+                <h2>Sign up</h2>
+                <div class="advice">
+                    <div class="advice-item">
+                        If you already have an account register
+                    </div>
+                    <div class="advice-item">
+                        You can <a class="advice-link" href="index.html"> Login here ! </a>
+                    </div>
+                </div>
+
+
+                <form id="register" action="">
+
+                    <label for="email">Email</label>
+                    <div class="input-inner" id="input-email">
+                        <input type="email" id="email" placeholder="Enter your email address">
+                    </div>
+
+                    <label for="username">Username</label>
+                    <div class="input-inner" id="input-user">
+                        <input type="email" id="username" placeholder="Enter your User name">
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div class="input-inner input-hide" id="input-password">
+                        <input type="password" id="password" placeholder="Enter your Password">
+                        <button type="button">
+                            <img src="images/hide.svg" alt="">
+                        </button>
+                    </div>
+                    <label for="repeat-password">Confrim Password</label>
+                    <div class="input-inner input-hide" id="input-repeat-password">
+                        <input type="password" id="repeat-password" placeholder="Confrim your Password">
+                        <button type="button">
+                            <img src="images/hide.svg" alt="">
+                        </button>
+                    </div>
+
+                    <button class="btn" type="submit">Register</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>

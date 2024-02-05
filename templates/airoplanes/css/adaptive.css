@@ -1,0 +1,25 @@
+@media only screen and (max-width: 950px) {
+
+    body > header
+    {
+        display: none;
+    }
+    .info
+    {
+        width: 100%;
+    }
+    .info-form
+    {
+        max-width: 100%;
+    }
+    .video
+    {
+        display: none;
+    }   
+
+    .password-properties a
+    {
+        color: #4D4D4D;
+    }
+    
+}

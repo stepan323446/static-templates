@@ -1,0 +1,313 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@media only screen and (max-width: 1077px)
+{
+    html.lock
+    {
+        overflow: hidden;
+    }
+    .burger
+    {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        z-index: 1000;
+    }
+    .burger::after
+    {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        top: 10px;
+        left: 0;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+    .burger::before
+    {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        bottom: 10px;
+        left: 0;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+    .burger span
+    {
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        top: 23px;
+        left: 0;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+    .burger.active span
+    {
+        -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+                transform: scale(0);
+    }
+    .burger.active::before
+    {
+        -webkit-transform: rotateZ(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotateZ(-45deg);
+        bottom: 26px;
+    }
+    .burger.active::after
+    {
+        -webkit-transform: rotateZ(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotateZ(45deg);
+        top: 21px;
+    }
+
+    .burger-panel
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background-color: rgb(36, 36, 36);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
+        -webkit-box-align: start !important;
+            -ms-flex-align: start !important;
+                align-items: flex-start !important;
+
+        overflow: auto;
+        -webkit-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    .burger-panel.active
+    {
+        left: 0;
+    }
+    .burger-panel a
+    {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .main-header
+    {
+        padding: 0 10px;
+    }
+    .main-header h1
+    {
+        z-index: 1000;
+    }
+    .why-need-textures__inner
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .why-need-text-image
+    {
+        margin-top: 30px;
+    }
+
+    #calculator span,
+    #calculator::after
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .right-block
+    {
+        display: none;
+    }
+    .takes-list .item
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .takes-list .item .text
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+    #mini-form label
+    {
+        max-width: 500px;
+    }
+    #mini-form
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    #check-yes
+    {
+        margin-top: 30px;
+    }
+    #calculator
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    #calculator > div
+    {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 770px)
+{
+    .villages-cards
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+    .card
+    {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 100%;
+    }
+    .card > *
+    {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .card-nickname
+    {
+        display: none;
+    }
+    .card-name
+    {
+        margin: 0 20px;
+    }
+    .card-otherinfo
+    {
+        margin-right: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 650px)
+{
+    .card > a
+    {
+        display: none;
+    }
+    .value-list .item::before,
+    .value-list .item::after
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 544px)
+{
+    .card
+    {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .card-otherinfo
+    {
+        display: none;
+    }
+    .img-val
+    {
+        width: 64px;
+        height: 64px;
+    }
+    .img-val img
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 488px)
+{
+    h1
+    {
+        font-size: 40px;
+    }
+    .common-text
+    {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .poll .descpr
+    {
+        font-size: 17px;
+    }
+    
+}
+@media only screen and (max-width: 414px)
+{
+    h1
+    {
+        font-size: 40px;
+    }
+    .common-text
+    {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .poll .descpr
+    {
+        font-size: 17px;
+    }
+    .img-val
+    {
+        width: 64px;
+        height: 64px;
+    }
+    .num-val
+    {
+        font-size: 30px;
+        margin-left: 20px !important;
+    }
+    .num-val.right
+    {
+        margin-right: 20px !important;
+    }
+}
